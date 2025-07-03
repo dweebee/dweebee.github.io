@@ -1,6 +1,6 @@
 ---
 title: "[1일차] 딥러닝이란?"
-last_modified_at: 2025-07-03
+last_modified_at: 2022-07-03
 categories:
   - deeplearning
 tags:
