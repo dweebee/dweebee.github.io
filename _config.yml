@@ -8,6 +8,10 @@ search: true
 
 # Build settings
 markdown: kramdown
+mathjax: true
+kramdown:
+  input: GFM
+  math_engine: mathjax
 remote_theme: mmistakes/minimal-mistakes
 
 # Outputting
@@ -96,3 +100,4 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
