@@ -1,5 +1,5 @@
 ---
-title: "[1일차] ANN(인공 신경망)"
+title: "Dense Neural Network"
 last_modified_at: 2022-07-03
 categories:
   - deeplearning
