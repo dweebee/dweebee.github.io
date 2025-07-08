@@ -5,7 +5,8 @@ authors:
   - Chien-Sheng Wu
   - Wenhao Liu
   - Caiming Xiong
-conference: ACL, 2021
+conference: ACL, 2022
+arXiv 게시일: Oct 2021
 github: https://github.com/salesforce/DialFact
 tags:
   - fact-checking
@@ -14,7 +15,10 @@ tags:
   - benchmark
   - dataset
 description: 대화 기반 사실 검증을 위한 최초의 대규모 벤치마크 DialFact를 제안하며, 세부 서브태스크와 약점 보완을 위한 학습 기법을 제시
-arXiv 게시일: 2021년 10월
+
+categories:
+  - literature
+published: true
 ---
 
 ## 1. 문제 정의
