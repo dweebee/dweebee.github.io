@@ -5,7 +5,7 @@ conference: EMNLP, 2023
 arXivPubdate: 2023-11-14
 github: null
 arxiv: 2311.08195
-tags: [[RetrievalAdaptation]][[ClaimDetection]][[SentenceRetrievalEnhancement]][[CatastrophicForgetting]][[DialogueFactChecking]]
+tags: [RetrievalAdaptation,ClaimDetection,SentenceRetrievalEnhancement,CatastrophicForgetting,DialogueFactChecking]
 description: "대화 맥락의 발화를 검증하기 위해 특화 모델 대신 기존 사실검증 모델의 입력·검색 단을 적응시키는 기법 제안"
 categories: literature
 published: true
