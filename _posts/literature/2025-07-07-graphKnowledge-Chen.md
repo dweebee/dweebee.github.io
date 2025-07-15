@@ -24,15 +24,7 @@ published: true
   - *Graph-Based*: 선택된 triple로 구성한 subgraph를 GNN(LoRA fine-tuned)로 인코딩, 대화 임베딩과 결합해 디코더로 응답 생성
 
 ## 3. Figures | Tables
-| 번호      | 유형    | 설명                                                                               |
-|----------|--------|----------------------------------------------------------------------------------|
-| Figure 1 | 그림   | 대화 hallucinatory 응답 vs triple+rewrite 적용 후 factual 응답 예시 비교               |
-| Figure 2 | 그림   | 파이프라인 흐름도: (1) rewrite, (2) triple retrieval, (3) prompt-/graph-based generation |
-| Table 1  | 표     | fact score human–model agreement (Cohen’s κ)                                          |
-| Table 2  | 표     | OpendialKG: BLEU, ROUGE-L, PPL, fact score, NEIP, F1 비교                             |
-| Table 3  | 표     | HybriDialogue: BLEU, ROUGE-L, PPL, fact score, NEIP, F1 비교                          |
-| Table 4  | 표     | Triton-X ablation: retriever/rewrite/graph 제거별 factual metric 변화                  |
-| Table 5  | 표     | Human eval: coherence, fluency, informativeness rating 비교                          |
+제안한 triple + rewrite 방식은 환각성 응답을 사실적 응답으로 전환하며, 이는 ‘rewrite → triple 검색 → 그래프·프롬프트 기반 생성’의 세 단계 파이프라인으로 구현된다. 자동 평가(OpendialKG·HybriDialogue의 BLEU·ROUGE‑L·PPL·fact score·NEIP·F1)와 인간 평가(일관성·유창성·정보성) 모두에서 기존 대비 성능이 유의미하게 향상됐고, 각 모듈을 제거하면 사실성 지표가 크게 떨어져 접근법의 기여도가 입증됐다.
 
 ## 4. 실험 환경
 - **프레임워크**: PyTorch, HuggingFace Transformers  
