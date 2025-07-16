@@ -37,20 +37,19 @@ published: true
      - SUPPORTS/REFUTES/NOT_ENOUGH_INFO 분류  
 
 ## 3. Figures | Tables
-| 번호     | 유형    | 설명                                                                                             |
-|---------|-------|------------------------------------------------------------------------------------------------|
-| Figure 1 | 그림   | MAPLE 전체 흐름도: seq2seq 학습→mutation 생성→SemSim 계산→로지스틱 분류 단계별 구조                    |
-| Figure 2 | 그림   | 5샷 환경 F1 곡선: MAPLE이 FEVER·cFEVER·SciFact에서 SOTA 성능 달성                                  |
-| Figure 3 | 그림   | LoRA vs SFT vs NLPO 비교: LoRA 학습 효율·성능 유지 강조                                           |
-| Figure 4 | 그림   | NLG 메트릭(NIST, BLEU, METEOR 등) 및 SemSim 비교: SemSim이 미세 언어 변화 포착에 최적               |
-| Figure 5 | 그림   | 클래스별 SemSim 분포 예시: NOT_ENOUGH_INFO 낮은 유사도, SUPPORTS/REFUTES 높은 구분도                |
-| Figure 6 | 그림   | 50샷 환경 F1 곡선: MAPLE 빠른 수렴·안정적 학습 입증                                                |
-| Table 1  | 표    | FEVER, cFEVER, SciFact_oracle, SciFact_retrieved 샘플 수·클래스 분포                                 |
-| Table 2  | 표    | unlabeled 데이터 풀의 클래스 비율 통계                                                             |
-| Table 3–6| 표    | 1–5샷 환경 F1·Accuracy(100회 평균·표준편차) 세부 성능                                               |
-| Table 7  | 표    | 클래스별 F1 세부 결과 (SUPPORTS/REFUTES/NOT_ENOUGH_INFO)                                           |
-| Table 8  | 표    | LoRA vs SFT 런타임 비교: 파라미터 수·학습 시간                                                    |
-| Table 9  | 표    | MAPLE 전체 런타임 및 자원 소모 (다양한 설정)                                                        |
+- MAPLE 전체 흐름도: seq2seq 학습 → mutation 생성 → SemSim 계산 → 로지스틱 분류 단계별 구조 (Figure 1)
+- 5샷 환경 F1 곡선: MAPLE이 FEVER·cFEVER·SciFact에서 SOTA 성능 달성 (Figure 2)
+- LoRA vs SFT vs NLPO 비교: LoRA 학습 효율·성능 유지 강조 (Figure 3)
+- NLG 메트릭(NIST, BLEU, METEOR 등) 및 SemSim 비교: SemSim이 미세 언어 변화 포착에 최적 (Figure 4)
+- 클래스별 SemSim 분포 예시: NOT_ENOUGH_INFO 낮은 유사도, SUPPORTS/REFUTES 높은 구분도 (Figure 5)
+- 50샷 환경 F1 곡선: MAPLE 빠른 수렴·안정적 학습 입증 (Figure 6)
+- FEVER, cFEVER, SciFact_oracle, SciFact_retrieved 샘플 수·클래스 분포 (Table 1)
+- unlabeled 데이터 풀의 클래스 비율 통계 (Table 2) ----- 매우중요!
+- 1–5샷 환경 F1·Accuracy(100회 평균·표준편차) 세부 성능 (Table 3–6)
+- 클래스별 F1 세부 결과 (SUPPORTS/REFUTES/NOT_ENOUGH_INFO) (Table 7)
+- LoRA vs SFT 런타임 비교: 파라미터 수·학습 시간 (Table 8)
+- MAPLE 전체 런타임 및 자원 소모 (다양한 설정) (Table 9).
+
 
 ## 4. 실험 환경
 - 프레임워크: PyTorch, HuggingFace Transformers  

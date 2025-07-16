@@ -27,17 +27,16 @@ published: true
 - 차별점: 실전 수정 이력 기반 대조적 학습, 세부 과제(task) 추가 정의
 
 ## 3. Figures | Tables
-| 번호    | 유형     | 요약 설명                                                                            |
-|-------|---------|-------------------------------------------------------------------------------------|
-| Figure 1 | 그림      | Wikipedia 문장 수정 전후 대비 예시: `"76,129→86,205"`→`"91,757"`로 업데이트, 초기 반박→지지 전환 설명         |
-| Figure 2 | 그림      | VITAMINC 데이터 4개 과제 예시 시퀀스: 수정 감지→진위 분류→단어 근거 태깅→자동 수정/추출 흐름도                  |
-| Figure 3 | 그림      | VITAMINC 비율에 따른 adversarial 평가 정확도 곡선: 실 데이터 비율↑→강건성↑                                   |
-| Table 1  | 표       | 문장 수정 유형별 예시: 사실·비사실 수정 vs. 대응하는 참/거짓 claim 작성 예시                                     |
-| Table 2  | 표       | VITAMINC 데이터 분할 통계: real vs synthetic, SUP/REF/NEI 비율                                             |
-| Table 3  | 표       | 수작업 수정 감지 과제 성능 비교: EditDist, BOW, ALBERT(diff/full), AUC·F1                                    |
-| Table 4  | 표       | Fact Verification/NLI 모델별 정확도: FEVER/MNLI/VitC 단독·조합 학습, adversarial·symmetric 평가                |
-| Table 5  | 표       | 단어 근거 태깅: unsupervised vs. distantly supervised(F1)                                                   |
-| Table 6  | 표       | 생성 과제 평가: Revision(SARI·BLEURT·fverdict), ClaimExtraction(ROUGE2·BLEU·fverdict), human 평가            |
+- Wikipedia 문장 수정 전후 대비 예시: "76,129→86,205" → "91,757"로 업데이트, 초기 반박 → 지지 전환 설명 (Figure 1)
+- VITAMINC 데이터 4개 과제 예시 시퀀스: 수정 감지 → 진위 분류 → 단어 근거 태깅 → 자동 수정/추출 흐름도 (Figure 2)
+- VITAMINC 비율에 따른 adversarial 평가 정확도 곡선: 실 데이터 비율↑ → 강건성↑ (Figure 3)
+- 문장 수정 유형별 예시: 사실·비사실 수정 vs. 대응하는 참/거짓 claim 작성 예시 (Table 1)
+- VITAMINC 데이터 분할 통계: real vs synthetic, SUP/REF/NEI 비율 (Table 2)
+- 수작업 수정 감지 과제 성능 비교: EditDist, BOW, ALBERT(diff/full), AUC·F1 (Table 3)
+- Fact Verification/NLI 모델별 정확도: FEVER/MNLI/VitC 단독·조합 학습, adversarial·symmetric 평가 (Table 4)
+- 단어 근거 태깅: unsupervised vs. distantly supervised(F1) (Table 5)
+- 생성 과제 평가: Revision(SARI·BLEURT·fverdict), ClaimExtraction(ROUGE2·BLEU·fverdict), human 평가 (Table 6)
+
 
 ## 4. 실험 환경
 - 프레임워크: PyTorch, HuggingFace Transformers  

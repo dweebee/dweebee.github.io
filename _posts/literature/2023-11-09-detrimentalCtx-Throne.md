@@ -22,16 +22,15 @@ published: true
 - **효과**: 최대 10% EM 개선, 기존 FiD 구조 유지·추가 훈련 없이 달성.
 
 ## 3. Figures | Tables
-| 번호      | 유형     | 설명                                                             |
-|---------|--------|----------------------------------------------------------------|
-| Figure 1  | 그림     | EM@k 패턴 예시: gold만 사용 시 정답 유지, 추가 문맥(P4) 투입 시 오답 전환[1]         |
-| Figure 2  | 그림     | 시뮬레이션: 무작위/negative sampling 문맥 투입에 따른 EM 변화 및 Stability Error Ratio |
-| Figure 3  | 그림     | DPR/SEAL/Contriever top-100 incremental EM vs AcEM 곡선              |
-| Table 1   | 표      | Stability Error Ratio: random noise vs BM25 negative sampling 비교        |
-| Table 2   | 표      | Probe 3(positive-leaning passages) 활용 시 NQ/TQA EM@100 vs AcEM@100 성능 |
-| Table 3   | 표      | attention threshold별 EM@20 성능                                       |
-| Table 4   | 표      | DP/DN 비율: highest attention vs transitioned prediction           |
-| Table 5   | 표      | DP vs DN binary classification 성능                                 |
+- EM@k 패턴 예시: gold만 사용 시 정답 유지, 추가 문맥(P4) 투입 시 오답 전환 (Figure 1) --- P4가 더 분류성능에 악영향. 
+- 시뮬레이션: 무작위/negative sampling 문맥 투입에 따른 EM 변화 및 Stability Error Ratio (Figure 2)
+- DPR/SEAL/Contriever top-100 incremental EM vs AcEM 곡선 (Figure 3)
+- Stability Error Ratio: random noise vs BM25 negative sampling 비교 (Table 1)
+- Probe 3(positive-leaning passages) 활용 시 NQ/TQA EM@100 vs AcEM@100 성능 (Table 2)
+- attention threshold별 EM@20 성능 (Table 3) ---- 어텐션 임계 아이디어.
+- DP/DN 비율: highest attention vs transitioned prediction (Table 4)
+- DP vs DN binary classification 성능 (Table 5)
+
 
 ## 4. 실험 환경
 - 프레임워크: PyTorch, HuggingFace Transformers  

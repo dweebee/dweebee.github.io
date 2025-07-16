@@ -33,17 +33,15 @@ published: true
 - 분류: 각 도덕 축별 single-label 바이너리 분류 (presence/absence).
 
 ## 3. Figures | Tables
-| 번호       | 유형     | 요약 설명                                                                                                       |
-|----------|--------|--------------------------------------------------------------------------------------------------------------|
-| Figure 1  | 그림     | 세 플랫폼 데이터 분포 UMAP 시각화: neutral 포함·제외 시 feature 클러스터링 차이                                    |
-| Figure 2  | 그림     | in-domain F1 Binary/Macro 비교: MoralStrength, Word2Vec+RF, GPT-4, MoralBERT, MoralBERT_adv 성능 곡선              |
-| Figure 3  | 그림     | out-of-domain F1 비교: 세 플랫폼 교차 검증 시 MoralBERT_adv 일관된 개선                                          |
-| Figure 5  | 그림     | Liberty/Oppression in-domain vs out-of-domain 성능(F1) 비교                                                     |
-| Table 1   | 표      | MFTC, MFRC, FB 도덕 레이블 분포(virtue/vice/neutral) 통계                                                   |
-| Table 2   | 표      | in-domain F1(Binary/Macro): MoralBERT_adv 최고—F1 Binary +0.17 vs GPT-4, +0.32 vs Word2Vec[1][19]                |
-| Table 3   | 표      | out-of-domain FB 테스트: GPT-4 vs MoralBERT vs MoralBERT_adv 유사 성능                                          |
-| Table 4   | 표      | 예시 발화별 human/GPT-4/MoralBERT_adv 라벨 비교: informal·논리적 뉘앙스 반영 차이                                  |
-| Table 5   | 표      | Liberty/Oppression in-domain 및 out-of-domain F1 세부 결과                                                     |
+- 세 플랫폼 데이터 분포 UMAP 시각화: neutral 포함·제외 시 feature 클러스터링 차이 (Figure 1)
+- in-domain F1 Binary/Macro 비교: MoralStrength, Word2Vec+RF, GPT-4, MoralBERT, MoralBERT_adv 성능 곡선 (Figure 2)
+- out-of-domain F1 비교: 세 플랫폼 교차 검증 시 MoralBERT_adv 일관된 개선 (Figure 3)
+- Liberty/Oppression in-domain vs out-of-domain 성능(F1) 비교 (Figure 5)
+- MFTC, MFRC, FB 도덕 레이블 분포(virtue/vice/neutral) 통계 (Table 1)
+- in-domain F1(Binary/Macro): MoralBERT_adv 최고 — F1 Binary +0.17 vs GPT-4, +0.32 vs Word2Vec (Table 2)
+- out-of-domain FB 테스트: GPT-4 vs MoralBERT vs MoralBERT_adv 유사 성능 (Table 3)
+- 예시 발화별 human/GPT-4/MoralBERT_adv 라벨 비교: informal·논리적 뉘앙스 반영 차이 (Table 4)
+- Liberty/Oppression in-domain 및 out-of-domain F1 세부 결과 (Table 5)
 
 ## 4. 실험 환경
 - 프레임워크: PyTorch, Transformers (Devlin et al., 2018)  

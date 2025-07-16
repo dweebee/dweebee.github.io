@@ -33,24 +33,22 @@ published: true
   - 합성 데이터(negation, substitution, mask-and-fill, generation)로 약지도 학습  
 
 ## 3. Figures | Tables
-| 번호       | 요약 내용                                                      |
-| -------- | ---------------------------------------------------------- |
-| Figure 1 | 대화 사실 검증 파이프라인: Verifiable → Evidence → Verification 단계 설명 |
-| Figure 2 | Aug-WoW 모델 혼동 행렬                                           |
-| Figure 3 | MTurk 라벨링 인터페이스 예시                                         |
-| Table 1  | DIALFACT 통계 (학습·검증·테스트, 생성/작성, 레이블 분포)                     |
-| Table 2  | REFUTE 레이블 상위 bigram + LMI; 명백한 부정어 바이어스 없음                |
-| Table 3  | Verifiable Claim Detection 베이스라인 정확도·F1                    |
-| Table 4  | Document recall: WikiAPI vs DPR; 맥락 활용 시 향상                |
-| Table 5  | Evidence sentence recall@5; 맥락 포함 시 더 높음                   |
-| Table 6  | Claim Verification 성능 비교 (Oracle/Wiki/DPR 증거)              |
-| Table 7  | Aug-WoW ablation: 맥락 제외·BERT-Large 영향                      |
-| Table 8  | 생성 vs 작성 발화별 검증 성능                                         |
-| Table 9  | 예시 대화·발화·증거·모델 예측                                          |
-| Table 10 | 검증 세트 검증 성능                                                |
-| Table 11 | NEI-Personal 제거 후 3-way 성능                                 |
-| Table 12 | 2-way 분류(Supported vs Not-Supported) 성능                    |
-| Table 13 | DIALFACT 샘플: 자동 생성 vs 인간 작성 발화                             |
+- 대화 사실 검증 파이프라인: Verifiable → Evidence → Verification 단계 설명 (Figure 1)
+- Aug-WoW 모델 혼동 행렬 (Figure 2)
+- MTurk 라벨링 인터페이스 예시 (Figure 3)
+- DIALFACT 통계 (학습·검증·테스트, 생성/작성, 레이블 분포) (Table 1)
+- REFUTE 레이블 상위 bigram + LMI; 명백한 부정어 바이어스 없음 (Table 2)
+- Verifiable Claim Detection 베이스라인 정확도·F1 (Table 3)
+- Document recall: WikiAPI vs DPR; 맥락 활용 시 향상 (Table 4)
+- Evidence sentence recall@5; 맥락 포함 시 더 높음 (Table 5)
+- Claim Verification 성능 비교 (Oracle/Wiki/DPR 증거) (Table 6)
+- Aug-WoW ablation: 맥락 제외·BERT-Large 영향 (Table 7)
+- 생성 vs 작성 발화별 검증 성능 (Table 8)
+- 예시 대화·발화·증거·모델 예측 (Table 9)
+- 검증 세트 검증 성능 (Table 10)
+- NEI-Personal 제거 후 3-way 성능 (Table 11)
+- 2-way 분류(Supported vs Not-Supported) 성능 (Table 12)
+- DIALFACT 샘플: 자동 생성 vs 인간 작성 발화 (Table 13)
 
 ## 4. 실험 환경
 - **프레임워크**: PyTorch, HuggingFace Transformers  

@@ -25,12 +25,11 @@ published: true
 - 의의: 모델이 surface cue 아닌 coreference 해소 뒤에 위치한 증거 사용하도록 유도  
 
 ## 3. Figures | Tables
-| 번호    | 유형     | 설명                                                                                  |
-|-------|---------|-------------------------------------------------------------------------------------|
-| Figure 1 | 그림     | 예시 문단과 질문: 대명사·명사 해소 필요 지점 표시(이탤릭·볼드·밑줄) 및 핵심 멘션 연결             |
-| Table 1  | 표      | 학습·검증·테스트 분할 통계: 문단 수, 질문 수, 길이·어휘 크기, multi-span 비율                    |
-| Table 2  | 표      | 100샘플 분석: pronominal(69%)·nominal(54%)·multiple(32%)·commonsense(10%) 비율            |
-| Table 3  | 표      | Baseline 성능: Heuristic vs QANet/BERT/XLNet, Dev/Test EM·F1 비교                           |
+- 예시 문단과 질문: 대명사·명사 해소 필요 지점 표시(이탤릭·볼드·밑줄) 및 핵심 멘션 연결 (Figure 1)
+- 학습·검증·테스트 분할 통계: 문단 수, 질문 수, 길이·어휘 크기, multi-span 비율 (Table 1)
+- 100샘플 분석: pronominal(69%)·nominal(54%)·multiple(32%)·commonsense(10%) 비율 (Table 2)
+- Baseline 성능: Heuristic vs QANet/BERT/XLNet, Dev/Test EM·F1 비교 (Table 3)
+
 
 ## 4. 실험 환경
 - 프레임워크: AllenNLP, pytorch-transformers  

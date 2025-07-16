@@ -46,17 +46,15 @@ published: true
 - copy mechanism 활용 coreference 모델링  
 
 ## 3. Figures | Tables
+- CorefBERT 훈련 과정 예시: "Claire" 마스킹, MRP는 context 복사 후보, MLM은 vocabulary 후보 선택 과정 시각화 (Figure 1)
+- QUOREF 성능: CorefBERTBASE F1 72.96% (+4.4%), CorefBERTLARGE 76.89% (+2.9%) (Table 1)
+- MRQA 6개 데이터셋 성능: BASE +1.7%, LARGE +1.0% 평균 F1 향상, NewsQA·HotpotQA 효과적 (Table 2)
+- DocRED 관계 추출: BASE 57.51% (+0.74%), LARGE 59.01% (+0.31%) (Table 3)
+- FEVER 사실 검증: KGAT+CorefBERTBASE 69.82% (+0.42%), CorefRoBERTaLARGE 72.30% (+1.92%) (Table 4)
+- Coreference resolution 태스크 결과: GAP, DPR, WSC, Winogender, PDP에서 일관된 성능 향상 (Table 5)
+- GLUE 벤치마크: BERT과 유사 성능, 일반 언어 이해 능력 유지 (Table 6)
+- Ablation study: NSP 제거, WWM/MRM 비교, copy-based 효과 분석. QUOREF +2.3% F1 향상 (Table 7)
 
-| 구분       | 설명                              | 핵심 내용                                                                                 |
-|----------|---------------------------------|------------------------------------------------------------------------------------------|
-| Figure 1 | CorefBERT 훈련 과정 예시               | "Claire" 마스킹, MRP는 context 복사 후보, MLM은 vocabulary 후보 선택 과정 시각화                     |
-| Table 1  | QUOREF 성능                        | CorefBERTBASE F1 72.96% (+4.4%), CorefBERTLARGE 76.89% (+2.9%)                              |
-| Table 2  | MRQA 6개 데이터셋 성능             | BASE +1.7%, LARGE +1.0% 평균 F1 향상, NewsQA·HotpotQA 효과적                                  |
-| Table 3  | DocRED 관계 추출                   | BASE 57.51% (+0.74%), LARGE 59.01% (+0.31%)                                                |
-| Table 4  | FEVER 사실 검증                    | KGAT+CorefBERTBASE FEVER 69.82% (+0.42%), CorefRoBERTaLARGE 72.30% (+1.92%)               |
-| Table 5  | Coreference resolution 태스크 결과 | GAP, DPR, WSC, Winogender, PDP에서 일관된 성능 향상                                         |
-| Table 6  | GLUE 벤치마크                      | BERT과 유사 성능, 일반 언어 이해 능력 유지                                                   |
-| Table 7  | Ablation study                    | NSP 제거, WWM/MRM 비교, copy-based 효과 분석. QUOREF +2.3% F1 향상                            |
 
 ## 4. 실험 환경
 

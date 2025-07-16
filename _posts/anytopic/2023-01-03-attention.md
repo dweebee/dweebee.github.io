@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 
 categories: anytopic
-published: true
+published: false
 ---
 
 # 트랜스포머 인코더로 텍스트 감성 분류하기

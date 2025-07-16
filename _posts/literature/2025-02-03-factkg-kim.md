@@ -23,16 +23,20 @@ published: true
 - baseline: claim only(BERT, BlueBERT, Flan-T5) vs. graph evidence 활용(GEAR 기반 subgraph retrieval+claim verification)
 
 ## 3. Figures | Tables
-| 번호      | 유형    | 설명                                                                                              |
-|----------|--------|-------------------------------------------------------------------------------------------------|
-| Figure 1 | 그림   | DBpedia triple evidence와 claim 매핑 예시: KG에서 triple 추출→claim 진위 판정 구조                  |
-| Table 1  | 표     | 5가지 reasoning 유형별 claim 예시: One-hop, Conjunction, Existence, Multi-hop, Negation            |
-| Figure 2 | 그림   | Entity/Relation substitution 통한 REFUTED claim 생성 및 NLI 기반 품질 관리 과정                    |
-| Figure 3 | 그림   | Conjunction/Multi-hop claim을 위한 그래프 패턴 시각화                                              |
-| Table 2  | 표     | reasoning 유형·claim 스타일별(문어체/구어체/전제) 데이터 분포 통계                                 |
-| Figure 4 | 그림   | baseline 파이프라인: subgraph retrieval(관계/경로 분류기)→claim verification(TRM) 구조              |
-| Table 3  | 표     | reasoning 유형별 baseline 성능(정확도): claim only(BERT 등) vs. evidence(GEAR)                     |
-| Table 4  | 표     | 스타일 교차 학습(Written→Colloquial 등) 성능 비교                                                  |
+- Figure 1: DBpedia에서 triple 추출 → claim 진위 판단 구조 예시
+
+- Table 1: 5가지 reasoning 유형별 claim 예시 (One-hop, Conjunction 등)
+
+- Figure 2: 엔터티/관계 치환 통한 REFUTED claim 생성 및 NLI 기반 품질 관리
+- Figure 3: 복합 reasoning claim 위한 그래프 패턴 시각화
+
+- Table 2: reasoning 유형·스타일별 데이터 분포 통계
+
+- Figure 4: 관계/경로 분류 기반 subgraph 추출 → claim 검증 파이프라인
+
+- Table 3: reasoning 유형별 baseline 정확도 (claim only vs. evidence 기반)
+
+- Table 4: 스타일 교차 학습 성능 비교 (문어체 ↔ 구어체 등)
 
 ## 4. 실험 환경
 - 프레임워크: PyTorch, HuggingFace Transformers
